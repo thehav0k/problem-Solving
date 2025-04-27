@@ -16,7 +16,7 @@ int main() {
         if(a>max) 
         max =a;
     }
-    printf("%i",max);
+    printf("%i \n",max);
 
     }
     
