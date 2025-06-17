@@ -1,3 +1,5 @@
+// insert at head and delete head (stack)
+// LIFO
 #include <iostream>
 using namespace std;
 
