@@ -1,14 +1,14 @@
 #include<iostream>
 using namespace std;
 
-void moveDisk(int n, char fromRod, char toRod, char auxRod) {
+void moveDisk(int n, char A, char C, char B) {
     if (n == 1) {
-        cout << "Move disk 1 from rod " << fromRod << " to rod " << toRod << endl;
+        cout << "Move disk 1 from rod " << A << " to rod " << C << endl;
         return;
     }
-    moveDisk(n - 1, fromRod, auxRod, toRod);
-    cout << "Move disk " << n << " from rod " << fromRod << " to rod " << toRod << endl;
-    moveDisk(n - 1, auxRod, toRod, fromRod);
+    moveDisk(n - 1, A, B, C);
+    cout << "Move disk " << n << " from rod " << A << " to rod " << C << endl;
+    moveDisk(n - 1, B, C, A);
 }
 
 int main() {
